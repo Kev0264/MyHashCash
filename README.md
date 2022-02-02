@@ -2,7 +2,12 @@
 
 This is my implementation of the hashcash proof-of-work code challenge.
 
-To get everything working, run the following command to setup and run the project. This was created in a Linux environment. If running on Windows, the main difference should only be that instead of `cp` you would use `copy`.
+These commands assume that you have python3 and pip3 installed. To check if python3 is installed, run the following command:
+```
+python3 -m pip --version
+```
+
+To get everything working, run the commands below to setup and run the project. This was created in a Linux environment. If running on Windows, the main difference should only be that instead of `cp` you would use `copy` (unless you're using PowerShell, in which case either works). First we will create a virtual environment *env* then activate it. Then from within the virtual environment we will install the required pip modules, make sure our environment variables are set, and then run the Flask application. Note that using environment variables mainly means that we do not need to run the command `export FLASK_APP=powapp` (or `set FLASK_APP=powapp` in Windows).
 
 ```
 python3 -m venv env
